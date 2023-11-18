@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <!-- Course: Programming Basics -->
+        <div class="card mb-3">
+            <div class="card-header">
+                <h2>Programming Basics</h2>
+            </div>
+            <div class="card-body">
+                <h3>Lesson: Python Fundamentals</h3>
+                <p>Learn the basics of Python programming through interactive exercises.</p>
+                
+				<!-- Short Explanation -->
+				<p>In Python, you can define a function using the <code>def</code> keyword. Functions allow you to encapsulate reusable code. They can take arguments, which are values you pass to the function when you call it. For example, a function to add two numbers would take two arguments. Inside the function, you use the <code>return</code> statement to send back the result. This makes functions incredibly versatile for various operations, such as adding numbers, processing data, and more.</p>
+
+				
+                <!-- Interactive Python Exercise -->
+                <div class="python-exercise">
+                    <p><strong>Task:</strong> Write a Python function to add two numbers.</p>
+                    
+                    <!-- Python Code Editor (Placeholder) -->
+					<textarea class="form-control" rows="5" id="pythonCode" placeholder="Write your Python code here..."></textarea>
+                    
+                    <!-- Check Answer Button (Placeholder) -->
+                    <button class="btn btn-primary mt-2" id="check-answer-btn">Check Answer</button>
+                </div>
+
+                <!-- Experience and Level Up (Placeholder) -->
+                <div class="experience-bar mt-3">
+                    <p class="experience-text" id="experience-text"><strong>Experience:</strong> 50/100</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" id="progress-bar"></div>
+                    </div>
+                    <p class="mt-2">Complete exercises to gain experience and level up!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Placeholder for Other Courses -->
+        <div class="card">
+            <div class="card-header"><h2>Other Courses</h2></div>
+            <div class="card-body">
+                <p>Networking Fundamentals (Coming Soon)</p>
+                <p>Cybersecurity 101 (Coming Soon)</p>
+            </div>
+        </div>
+
+        <a href="/" class="btn btn-primary mt-3">Back to Home</a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.5/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+	<script src="/static/courses.js"></script>
+
+</body>
+</html>

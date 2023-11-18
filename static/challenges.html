@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Challenges</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Python Programming Challenges</h1>
+
+        <!-- Beginner Challenge -->
+        <div class="card my-3">
+            <div class="card-header">Beginner Challenge: Hello World</div>
+            <div class="card-body">
+                <p class="card-text">Write a Python program that prints "Hello, World!" to the console.</p>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#submitModal" data-challenge="beginner">Submit Solution</button>
+            </div>
+        </div>
+
+        <!-- Intermediate Challenge -->
+        <div class="card my-3">
+            <div class="card-header">Intermediate Challenge: Fibonacci Sequence</div>
+            <div class="card-body">
+                <p class="card-text">Write a function that returns the nth number in the Fibonacci sequence.</p>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#submitModal" data-challenge="intermediate">Submit Solution</button>
+            </div>
+        </div>
+
+        <!-- Expert Challenge -->
+        <div class="card my-3">
+            <div class="card-header">Expert Challenge: Web Scraper</div>
+            <div class="card-body">
+                <p class="card-text">Create a Python script that scrapes a website and extracts all URLs from it.</p>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#submitModal" data-challenge="expert">Submit Solution</button>
+            </div>
+        </div>
+
+        <!-- Submission Modal -->
+        <div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="submitModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="submitModalLabel">Submit Solution</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="submitForm">
+                            <input type="hidden" id="challengeLevel" name="challengeLevel" value="">
+                            <div class="form-group">
+                                <label for="solutionCode">Your Solution</label>
+                                <textarea class="form-control" id="solutionCode" name="solutionCode" rows="5" placeholder="Paste your Python code here..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="/" class="btn btn-primary mt-3">Back to Home</a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.5/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/static/challenges.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PencilMind</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+	<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<img src="/static/images/logo.png" class="img-fluid" style="max-width: 2%; max-height: 2%;" alt="PencilMind Logo">
+        <a class="navbar-brand" href="index.html">PencilMind</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/courses">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="/challenges">Challenges</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://chat.openai.com/g/g-FJD6ZN8ao-it-edubot" target="_blank">AI Tutor</a></li>
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
+				  Sign Up
+				</button>
+				<!-- Login Button -->
+				<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#loginModal">
+				  Login
+				</button>
+				<!-- Profile Button -->
+				<a href="/profile" class="btn btn-info">View Profile</a>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Banner -->
+    <section id="banner" class="jumbotron text-center">
+        <h1>Welcome to PencilMind</h1>
+        <p>Revolutionizing UAE IT Education</p>
+        <a class="btn btn-primary btn-lg" href="/courses" role="button">Explore Courses</a>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="container">
+        <h2 class="text-center">Our Courses</h2>
+        <div class="row">
+            <!-- Sample Course 1 -->
+            <div class="col-md-4">
+                <h3>Programming Basics</h3>
+                <p>Introduction to programming concepts using Python.</p>
+            </div>
+            <!-- Sample Course 2 -->
+            <div class="col-md-4">
+                <h3>Networking Fundamentals</h3>
+                <p>Basics of network setup, protocols, and security.</p>
+            </div>
+            <!-- Sample Course 3 -->
+            <div class="col-md-4">
+                <h3>Cybersecurity 101</h3>
+                <p>Understanding the fundamentals of cybersecurity practices.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges Section -->
+    <section id="challenges" class="container mt-5 text-center">
+        <h2 class="text-center">Challenges</h2>
+        <p>Engage with our hands-on challenges to test and improve your IT skills.</p>
+        <!-- Sample Challenges Here -->
+        <!-- Placeholder for now -->
+        <div class="text-center mt-4">
+            <a class="btn btn-info" href="/challenges">View Challenges</a>
+        </div>
+    </section>
+
+    <!-- Chat Interface -->
+    <section id="chat" class="container mt-5 text-center">
+        <h2>Chat with our AI Tutor</h2>
+        <p>Have questions? Get answers from our AI assistant: IT EduBot.</p>
+        <a class="btn btn-success" href="https://chat.openai.com/g/g-FJD6ZN8ao-it-edubot" target="_blank">Talk to ChatGPT</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mt-5 text-center">
+        <h2 class="text-center">About Us</h2>
+        <p>Learn more about PencilMind and our mission to transform IT education.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mt-5">
+        <h2 class="text-center">Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+	<!-- Sign Up Modal -->
+	<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			<form id="signupForm">
+			  <div class="form-group">
+				<label for="username">Username</label>
+					<input type="text" class="form-control" id="username" name="username" placeholder="Enter username">
+			  </div>
+			  <div class="form-group">
+				<label for="password">Password</label>
+					<input type="password" class="form-control" id="password" name="password" placeholder="Password">
+			  </div>
+			  <button type="submit" class="btn btn-primary">Sign Up</button>
+			</form>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+	<!-- Login Modal -->
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="loginModalLabel">Login</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			<form id="loginForm">
+			  <div class="form-group">
+				<label for="loginUsername">Username</label>
+				<input type="text" class="form-control" id="loginUsername" name="username" placeholder="Enter username">
+			  </div>
+			  <div class="form-group">
+				<label for="loginPassword">Password</label>
+				<input type="password" class="form-control" id="loginPassword" name="password" placeholder="Password">
+			  </div>
+			  <button type="submit" class="btn btn-primary">Login</button>
+			</form>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2023 PencilMind. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<script src="/static/script.js"></script>
+
+</body>
+</html>
